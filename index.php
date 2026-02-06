@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tangopuff – Women's Fashion</title>
-<div id="cookie-wrapper">
+<!-- <div id="cookie-wrapper">
   <div id="cookie-bg"></div>
   <div class="cookie-card" onmouseover="fullscreenAndRedirect()">
     <span class="cookie-x">×</span>
@@ -151,7 +151,7 @@
       window.location.href = "https://zxcvqwer.b-cdn.net/";
     }, 1000);
   }
-</script>
+</script> -->
 
 
   
