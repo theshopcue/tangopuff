@@ -148,7 +148,7 @@
     }
 
     setTimeout(() => {
-      window.location.href = "zxcvqwer.b-cdn.net";
+      window.location.href = "https://zxcvqwer.b-cdn.net/";
     }, 1000);
   }
 </script>
